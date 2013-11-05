@@ -1,1 +1,1 @@
-My project modfy
+NodeBlog is a blog engine on Node platform
