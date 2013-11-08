@@ -1,76 +1,351 @@
-/*
-Syntax error: File to import not found or unreadable: partials/normalize.
-              Load paths:
-                C:/Aravind/learn/node/NodeBlog/public/scss
-                C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets
-                C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets
-                Compass::SpriteImporter
-        on line 4 of C:/Aravind/learn/node/NodeBlog/public/scss/screen.scss
+/*! =============================================================================
+ Normalize.scss based on Nicolas Gallagher and Jonathan Neal's
+ normalize.css v2.1.3 | MIT License | git.io/normalize
+ ============================================================================= !*/
+/* line 54, ../scss/partials/_normilize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
 
-1: C:/Aravind/learn/node/NodeBlog/public/scss/screen.scss
+/* line 62, ../scss/partials/_normilize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
 
-Backtrace:
-C:/Aravind/learn/node/NodeBlog/public/scss/screen.scss:4
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:31:in `create'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:26:in `block in created'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `each'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `created'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:17:in `refresh'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `call'
-C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-C:/Ruby200/bin/compass:23:in `load'
-C:/Ruby200/bin/compass:23:in `<main>'
-*/
-body:before {
+/* line 73, ../scss/partials/_normilize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 83, ../scss/partials/_normilize.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 96, ../scss/partials/_normilize.scss */
+html {
+  font-size: 100%;
+  background: white;
+  color: black;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 112, ../scss/partials/_normilize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 118, ../scss/partials/_normilize.scss */
+body {
+  margin: 0;
+}
+
+/* line 131, ../scss/partials/_normilize.scss */
+a {
+  background: transparent;
+}
+/* line 138, ../scss/partials/_normilize.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 145, ../scss/partials/_normilize.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 158, ../scss/partials/_normilize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 163, ../scss/partials/_normilize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 168, ../scss/partials/_normilize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 173, ../scss/partials/_normilize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 178, ../scss/partials/_normilize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 183, ../scss/partials/_normilize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* line 191, ../scss/partials/_normilize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 198, ../scss/partials/_normilize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 203, ../scss/partials/_normilize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 210, ../scss/partials/_normilize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 216, ../scss/partials/_normilize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 224, ../scss/partials/_normilize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/* line 235, ../scss/partials/_normilize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* line 245, ../scss/partials/_normilize.scss */
+pre {
   white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: partials/normalize.\A               Load paths:\A                 C:/Aravind/learn/node/NodeBlog/public/scss\A                 C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 4 of C:/Aravind/learn/node/NodeBlog/public/scss/screen.scss\A \A 1: C:/Aravind/learn/node/NodeBlog/public/scss/screen.scss"; }
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 253, ../scss/partials/_normilize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 262, ../scss/partials/_normilize.scss */
+q {
+  quotes: none;
+}
+
+/* line 269, ../scss/partials/_normilize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 276, ../scss/partials/_normilize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 284, ../scss/partials/_normilize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 291, ../scss/partials/_normilize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 295, ../scss/partials/_normilize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 308, ../scss/partials/_normilize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 314, ../scss/partials/_normilize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 323, ../scss/partials/_normilize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/* line 332, ../scss/partials/_normilize.scss */
+nav ul,
+nav ol {
+  list-style-image: none;
+}
+
+/* line 347, ../scss/partials/_normilize.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 356, ../scss/partials/_normilize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 366, ../scss/partials/_normilize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 376, ../scss/partials/_normilize.scss */
+form {
+  margin: 0;
+}
+
+/* line 383, ../scss/partials/_normilize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 394, ../scss/partials/_normilize.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/* line 411, ../scss/partials/_normilize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 424, ../scss/partials/_normilize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 434, ../scss/partials/_normilize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 449, ../scss/partials/_normilize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+/* line 460, ../scss/partials/_normilize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 470, ../scss/partials/_normilize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+/* line 482, ../scss/partials/_normilize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 493, ../scss/partials/_normilize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 501, ../scss/partials/_normilize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 510, ../scss/partials/_normilize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 521, ../scss/partials/_normilize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../scss/partials/_layout.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
